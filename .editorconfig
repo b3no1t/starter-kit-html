@@ -1,4 +1,6 @@
 # editorconfig.org
+# EditorConfig aide à maintenir des styles de codage cohérents pour plusieurs développeurs travaillant sur le même projet à travers divers éditeurs et IDE. Le projet EditorConfig se compose d'un format de fichier permettant de définir des styles de codage et d'une collection de plugins d'éditeurs de texte qui permettent aux éditeurs de lire le format de fichier et d'adhérer aux styles définis. Les fichiers EditorConfig sont facilement lisibles et fonctionnent parfaitement avec les systèmes de contrôle de version.
+
 
 root = true
 
