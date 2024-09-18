@@ -2,6 +2,9 @@
    Custom properties
    ========================================================================== */
 :root{
-  --color-primary: PowderBlue;
-  --color-secondary: Peru;
+  --color-primary: Peru;
+  --color-secondary: SkyBlue;
+  --color-tertiary: white;
+  --bgcolor-primary: #ced9dd;
+  --bgcolor-secondary: PaleGoldenRod;
 }

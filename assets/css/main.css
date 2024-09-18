@@ -8,13 +8,14 @@
  * Le css h5bp fait partie de projet Html boiler room, voir le fichier pour plus de détails
  */
 
-@import url(_variables.css)    layer(reset);
-@import url(_h5bp.css)    layer(reset);
-@import url(_layout.css)  layer(layout);
-@import url(_fonts.css)   layer(fonts);
-@import url(_header.css)  layer(header);
-@import url(_nav.css)     layer(nav);
-@import url(_content.css) layer(content);
-@import url(_footer.css)  layer(footer);
+@import url(./libs/_variables.css)     layer(reset);
+@import url(./base/_reset.css)         layer(reset);
+@import url(./base/_h5bp.css)          layer(reset);
+@import url(./layout/layout.css)       layer(layout);
+@import url(./base/_fonts.css)         layer(fonts);
+@import url(./components/_header.css)  layer(components);
+@import url(./components/_nav.css)           layer(components);
+@import url(./components/_content.css)       layer(components);
+@import url(./components/_footer.css)        layer(components);
 
-@layer reset, layout, fonts, header, nav, content, footer;
+@layer reset, layout, fonts, componentsr;
