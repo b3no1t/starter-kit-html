@@ -5,7 +5,7 @@
 /*
  * ! La règle @import inclut un fichier CSS externe.
  * Le paramètre « layer(…) » spécifie que les styles sont ajoutés au layer("xxx").
- * Le css h5bp fait partie de projet Html boiler room, voir le fichier pour plus de détails
+ * Le css h5bp fait partie de projet Html boiler-room, voir le fichier css.
  */
 
 @import url(./libs/_variables.css)     layer(reset);
