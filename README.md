@@ -5,7 +5,7 @@ author: Benoit Lepage
 ## Exemples de bonnes pratiques
 
 - Architecture des dossiers: voir explorateur de fichiers VSC
-- 404: page d'erreur server
+- 404 : page d'erreur server
 - gitignore: Ignore certans dossiers ou fichiers
 - favicon
 - site.manifest
