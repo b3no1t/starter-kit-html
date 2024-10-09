@@ -2,7 +2,7 @@
    Custom properties
    ========================================================================== */
 :root{
-  --color-primary    : Peru;
+  --clr-primary    : Peru;
   --color-secondary  : SkyBlue;
   --color-tertiary   : white;
   --bgcolor-primary  : #ced9dd;

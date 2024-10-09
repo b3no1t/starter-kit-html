@@ -1,3 +1,3 @@
 export function message() {
-  alert("💩");
+  console.info("💩");
 }
