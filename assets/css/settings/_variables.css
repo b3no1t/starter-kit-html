@@ -1,0 +1,26 @@
+/* ==========================================================================
+   Custom properties
+   ========================================================================== */
+:root{
+  --color-primary    : Peru;
+  --color-secondary  : SkyBlue;
+  --color-tertiary   : white;
+  --bgcolor-primary  : #ced9dd;
+  --bgcolor-secondary: PaleGoldenRod;
+
+}
+    /*
+    https://developer.mozilla.org/en-US/docs/Web/CSS/@property
+
+    @property --property-name {
+      syntax       : "<color>";
+      inherits     : false;
+      initial-value: #c0ffee;
+    }
+  */
+@property --color-primary{
+  syntax       : "<color>";
+  inherits     : true;
+  initial-value: var(--color-primary);
+
+}
