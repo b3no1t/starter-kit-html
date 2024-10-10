@@ -9,30 +9,28 @@
   width           : 100vw;
   height          : 10svh;
   --h-nav         : 1rem;
-  margin-top: 1rem;
+  margin-top      : 1rem;
+  z-index: 666;
 }
 .menu{
 }
+
 .menu nav{
   display         : flex;
   justify-content : space-around;
   max-width       : 1024px;
   margin          : 0 auto;
-
 }
 
-.nav__links {
+ul.nav__links {
   display        : flex;
   justify-content: flex-end;
   width          : 100%;
-
 }
 
-.nav__link {
-
+li.nav__link {
   text-transform: uppercase;
   color    : var(--color-primary);
-
   &.is-active {
     border-bottom: 2px solid var(--color-primary);
 
