@@ -1,3 +1,55 @@
 /* ==========================================================================
    Navigation styles
-   ========================================================================== */
+     ==========================================================================   */
+
+
+.menu{
+  background-color: inherit;
+  position        : fixed;
+  width           : 100vw;
+  height          : 10svh;
+  --h-nav         : 1rem;
+  margin-top: 1rem;
+}
+.menu{
+}
+.menu nav{
+  display         : flex;
+  justify-content : space-around;
+  max-width       : 1024px;
+  margin          : 0 auto;
+
+}
+
+.nav__links {
+  display        : flex;
+  justify-content: flex-end;
+  width          : 100%;
+
+}
+
+.nav__link {
+
+  text-transform: uppercase;
+  color    : var(--color-primary);
+
+  &.is-active {
+    border-bottom: 2px solid var(--color-primary);
+
+  }
+
+  &>a {
+    text-decoration: none;
+    display        : block;
+    padding        : var(--h-nav);
+    color          : var(--color-primary);
+    font-weight: 900;
+  }
+  &.is-active>a {
+    color    : var(--color-primary);
+  }
+  &>a:hover{
+    border-bottom: 2px solid var(--color-primary);
+
+  }
+}

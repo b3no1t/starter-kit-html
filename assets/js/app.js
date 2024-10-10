@@ -1,10 +1,10 @@
 // importation du fichier message.js donnant accès à la fonction message
-import { message } from "./vendor/message.js";
+import { message } from "./libs/message.js";
 
 window.addEventListener("load", (event) => {
   // on appel la fonction message
   message();
   // communication avec la console
-  console.log("La page est complètement chargée");
+  console.warn("❤️ La page est complètement chargée");
 });
 

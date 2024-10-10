@@ -1,7 +1,38 @@
 /* ==========================================================================
-   Custom properties
-   ========================================================================== */
-:root{
-  --color-primary: PowderBlue;
-  --color-secondary: Peru;
-}
+     Custom properties ========================================================================== */
+
+       @property --color-text {
+         syntax       : "<color>";
+         inherits     : false;
+         initial-value: #090c13;
+       }
+
+       @property --color-primary {
+         syntax       : "<color>";
+         inherits     : false;
+         initial-value: blue;
+       }
+
+       @property --color-secondary {
+         syntax       : "<color>";
+         inherits     : false;
+         initial-value: #cd853f;
+       }
+
+       @property --h1 {
+         syntax       : "<number>";
+         inherits     : false;
+         initial-value: 3rem;
+       }
+       @property --h2 {
+         syntax       : "<number>";
+         inherits     : false;
+         initial-value: 2.8rem;
+       }
+       @property --h3 {
+         syntax       : "<number>";
+         inherits     : false;
+         initial-value: 2.3rem;
+       }
+
+

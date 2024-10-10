@@ -1,3 +1,4 @@
+
 /* ==========================================================================
    Main style, import all styles
    ========================================================================== */
@@ -6,15 +7,17 @@
  * ! La règle @import inclut un fichier CSS externe.
  * Le paramètre « layer(…) » spécifie que les styles sont ajoutés au layer("xxx").
  * Le css h5bp fait partie de projet Html boiler room, voir le fichier pour plus de détails
+ * mini reset: https://jgthms.com/minireset.css/
  */
-
-@import url(_variables.css)    layer(reset);
-@import url(_h5bp.css)         layer(reset);
+ @import url("https://cdn.jsdelivr.net/gh/jgthms/minireset.css@master/minireset.min.css") layer(reset);
+@import url(_variables.css)    layer(var);
+@import url(_h5bp.css)         layer(goodpractice);
 @import url(_layout.css)  layer(layout);
 @import url(_fonts.css)   layer(fonts);
 @import url(_header.css)  layer(header);
 @import url(_nav.css)     layer(nav);
 @import url(_content.css) layer(content);
 @import url(_footer.css)  layer(footer);
+@import url(_print.css)   layer(print);
 
-@layer reset, layout, fonts, header, nav, content, footer;
+@layer var,reset,goodpractice, layout, fonts, header, nav, content, footer, print;

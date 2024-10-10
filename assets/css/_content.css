@@ -1,3 +1,20 @@
 /* ==========================================================================
    Content styles
    ========================================================================== */
+body {
+  /* accent color for form ui */
+  accent-color: #080;
+  line-height: 1.4;
+}
+/* coupure de titre */
+h1, h2, h3, h4, h5, h6 {
+  text-wrap: balance;
+}
+img {
+  /* evite que les grandes image débordent */
+  max-width: 100%;
+}
+p {
+  /* max 65 caractere par ligne  */
+  max-width: 65ch;
+}
