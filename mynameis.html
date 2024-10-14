@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <title>Fiche de contact</title>
     <link rel="stylesheet" href="assets/css/main.css" />
+    <link rel="stylesheet" href="assets/css/mynameis.css" />
     <meta name="description" content="" />
     <meta name="author" content="" />
     <!-- Les balises OpenGraph ( og ) sont utilisées par Facebook et d'autres plateformes de médias sociaux pour afficher un aperçu de la page lorsqu'elle est partagée.  -->
@@ -22,6 +23,25 @@
     <link rel="manifest" href="site.webmanifest" />
     <!-- theme de couleur pour le navigateur -->
     <meta name="theme-color" content="#fafafa" />
+    <style>
+      input[type="radio"] {
+        display: none;
+        &:checked + label {
+          background-color: darkblue;
+          border-right: solid 10px lightblue;
+          font-weight: bold;
+          color: lightblue;
+        }
+      }
+      label {
+        display: block;
+        padding: 5px;
+        font-size: 1.3em;
+        &:hover {
+          cursor: pointer;
+        }
+      }
+    </style>
   </head>
   <!-- BODY: structure de la page, visible pour l'internaute -->
   <body class="profil">
@@ -36,10 +56,30 @@
 
           <ul class="nav__links">
             <li class="nav__link is-active"><a href="#home">home</a></li>
+            <li class="nav__link"><a href="#details">details</a></li>
             <li class="nav__link"><a href="#works">works</a></li>
             <li class="nav__link"><a href="#skills">skills</a></li>
-            <li class="nav__link"><a href="#details">details</a></li>
           </ul>
+
+          <div class="nav">
+            <input
+              id="home"
+              type="radio"
+              checked="check"
+              name="rad"
+              value="home"
+            /><label for="home">HOME</label>
+            <input id="details" type="radio" name="rad" value="details" /><label
+              for="details"
+              >DETAILS</label
+            >
+            <input id="works" type="radio" name="rad" value="#works" />
+            <label for="works">WORX</label>
+            <input id="skills" type="radio" name="rad" value="skill" /><label
+              for="skills"
+              >SKILLZ</label
+            >
+          </div>
         </nav>
       </header>
     </div>
@@ -50,13 +90,152 @@
           <div class="container home">
             <div>
               <img src="./assets/img/gridmaster-logo.png" alt="logo" />
+              <h1 class="h1">John Doe - Web Artisant</h1>
             </div>
           </div>
         </div>
       </section>
-      <section class="section works" id="works"></section>
+      <section class="section details" id="details">
+        <div class="wrapper">
+          <div class="container">
+            <h2>Contact the author of this page</h2>
+            <address>
+              <a href="mailto:jim@example.com">jim@example.com</a><br />
+              <a href="tel:+14155550132">+1 (415) 555‑0132</a>
+            </address>
+          </div>
+        </div>
+      </section>
+      <section class="section works" id="works">
+        <div class="wrapper">
+          <div>
+            <h2>WORKS</h2>
+            <div class="grid-content">
+              <div class="grid-item">
+                <img
+                  src="https://placehold.co/300x150?text=Hello+World"
+                  alt="image"
+                />
+                <div>
+                  <h2>Titre</h2>
+                  <p>
+                    Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+                    Veniam, eos atque nemo optio ad magni cum vitae maiores eum
+                    repudiandae. Ipsa, corporis beatae, dolor recusandae quo
+                    dignissimos odio vel natus provident cum repellendus
+                    molestiae iste mollitia voluptates! Impedit iusto aut
+                    consequuntur architecto aliquam praesentium quia.
+                  </p>
+                </div>
+              </div>
+
+              <div class="grid-item">
+                <img
+                  src="https://placehold.co/300x150?text=Hello+World"
+                  alt="image"
+                />
+                <div>
+                  <h2>Titre</h2>
+                  <p>
+                    Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+                    Veniam, eos atque nemo optio ad magni cum vitae maiores eum
+                    repudiandae. Ipsa, corporis beatae, dolor recusandae quo
+                    dignissimos odio vel natus provident cum repellendus
+                    molestiae iste mollitia voluptates! Impedit iusto aut
+                    consequuntur architecto aliquam praesentium quia.
+                  </p>
+                </div>
+              </div>
+              <div class="grid-item">
+                <img
+                  src="https://placehold.co/300x150?text=Hello+World"
+                  alt="image"
+                />
+                <div>
+                  <h2>Titre</h2>
+                  <p>
+                    Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+                    Veniam, eos atque nemo optio ad magni cum vitae maiores eum
+                    repudiandae. Ipsa, corporis beatae, dolor recusandae quo
+                    dignissimos odio vel natus provident cum repellendus
+                    molestiae iste mollitia voluptates! Impedit iusto aut
+                    consequuntur architecto aliquam praesentium quia.
+                  </p>
+                </div>
+              </div>
+              <div class="grid-item">
+                <img
+                  src="https://placehold.co/300x150?text=Hello+World"
+                  alt="image"
+                />
+                <div>
+                  <h2>Titre</h2>
+                  <p>
+                    Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+                    Veniam, eos atque nemo optio ad magni cum vitae maiores eum
+                    repudiandae. Ipsa, corporis beatae, dolor recusandae quo
+                    dignissimos odio vel natus provident cum repellendus
+                    molestiae iste mollitia voluptates! Impedit iusto aut
+                    consequuntur architecto aliquam praesentium quia.
+                  </p>
+                </div>
+              </div>
+              <div class="grid-item">
+                <img
+                  src="https://placehold.co/300x150?text=Hello+World"
+                  alt="image"
+                />
+                <div>
+                  <h2>Titre</h2>
+                  <p>
+                    Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+                    Veniam, eos atque nemo optio ad magni cum vitae maiores eum
+                    repudiandae. Ipsa, corporis beatae, dolor recusandae quo
+                    dignissimos odio vel natus provident cum repellendus
+                    molestiae iste mollitia voluptates! Impedit iusto aut
+                    consequuntur architecto aliquam praesentium quia.
+                  </p>
+                </div>
+              </div>
+              <div class="grid-item">
+                <img
+                  src="https://placehold.co/300x150?text=Hello+World"
+                  alt="image"
+                />
+                <div>
+                  <h2>Titre</h2>
+                  <p>
+                    Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+                    Veniam, eos atque nemo optio ad magni cum vitae maiores eum
+                    repudiandae. Ipsa, corporis beatae, dolor recusandae quo
+                    dignissimos odio vel natus provident cum repellendus
+                    molestiae iste mollitia voluptates! Impedit iusto aut
+                    consequuntur architecto aliquam praesentium quia.
+                  </p>
+                </div>
+              </div>
+              <div class="grid-item">
+                <img
+                  src="https://placehold.co/300x150?text=Hello+World"
+                  alt="image"
+                />
+                <div>
+                  <h2>Titre</h2>
+                  <p>
+                    Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+                    Veniam, eos atque nemo optio ad magni cum vitae maiores eum
+                    repudiandae. Ipsa, corporis beatae, dolor recusandae quo
+                    dignissimos odio vel natus provident cum repellendus
+                    molestiae iste mollitia voluptates! Impedit iusto aut
+                    consequuntur architecto aliquam praesentium quia.
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
       <section class="section skills" id="skills"></section>
-      <section class="section details" id="details"></section>
     </main>
   </body>
 </html>

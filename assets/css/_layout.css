@@ -40,8 +40,9 @@
 
 .section{
   min-height: 100dvh;
+  padding-top: 6rem;
   &.works{
-    background-color: lightcyan;
+    background-color: whitesmoke;
   }
   &.skills{
     background-color: lightpink;
